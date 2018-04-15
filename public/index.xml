@@ -2,21 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dane Hager&#39;s Blog</title>
-    <link>/</link>
+    <link>/danehager.netlify.com/</link>
     <description>Recent content on Dane Hager&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 May 2016 21:48:51 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 15 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/danehager.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>First Post</title>
+      <link>/danehager.netlify.com/2018/04/15/first-post/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/danehager.netlify.com/2018/04/15/first-post/</guid>
+      <description>Is this where I put my blog stuff? Testing this out…
+What happens if I type some code using a tick:
+’library(tidyverse) ’library(dslabs) ’data(gapminder) ’countries &amp;lt;- c(“United States”, “Canada”) #creates an easier way to manage filtering by a set of selections ’labels &amp;lt;- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label ’gapminder %&amp;gt;% filter(country %in% countries) %&amp;gt;% ’ggplot(aes(year, life_expectancy, col=country))+ ’geom_line() + ’geom_text(data=labels, aes(x, y, label=country), size=5) + ’theme(legend.</description>
+    </item>
+    
+    <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>/danehager.netlify.com/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
-      <guid>/about/</guid>
+      <guid>/danehager.netlify.com/about/</guid>
       <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     
