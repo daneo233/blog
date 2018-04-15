@@ -1,4 +1,4 @@
-baseurl = "danehager.netlify.com"
+baseurl = "http://danehager.netlify.com"
 languageCode = "en-us"
 title = "Dane Hager's Blog"
 theme = "hugo-lithium-theme"
