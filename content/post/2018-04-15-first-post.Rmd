@@ -12,7 +12,7 @@ tags:
 
 In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. So, firstly, we load the packages:
 
-```{r echo false}
+```{r message false}
 library(tidyverse)
 library(dslabs)
 ```
