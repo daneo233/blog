@@ -19,7 +19,8 @@
       <guid>/2018/04/15/first-post/</guid>
       <description>Is this where I put my blog stuff? Testing this out…
 What happens if I type some code using a tick:
-’library(tidyverse) ’library(dslabs) ’data(gapminder) ’countries &amp;lt;- c(“United States”, “Canada”) #creates an easier way to manage filtering by a set of selections ’labels &amp;lt;- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label ’gapminder %&amp;gt;% filter(country %in% countries) %&amp;gt;% ’ggplot(aes(year, life_expectancy, col=country))+ ’geom_line() + ’geom_text(data=labels, aes(x, y, label=country), size=5) + ’theme(legend.</description>
+(woopsy, need triple ticks and an r):
+library(tidyverse)## Warning: package &amp;#39;tidyverse&amp;#39; was built under R version 3.4.3## -- Attaching packages --------------------------------------------- tidyverse 1.2.1 --## v ggplot2 2.2.1 v purrr 0.2.4## v tibble 1.4.1 v dplyr 0.7.4## v tidyr 0.7.2 v stringr 1.2.0## v readr 1.</description>
     </item>
     
   </channel>

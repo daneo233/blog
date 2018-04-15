@@ -15,13 +15,17 @@ Is this where I put my blog stuff? Testing this out...
 
 What happens if I type some code using a tick:
 
-'library(tidyverse)
-'library(dslabs)
-'data(gapminder)
-'countries <- c("United States", "Canada") #creates an easier way to manage filtering by a set of selections
-'labels <- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label
-'gapminder %>% filter(country %in% countries) %>% 
-  'ggplot(aes(year, life_expectancy, col=country))+
-  'geom_line() +
-  'geom_text(data=labels, aes(x, y, label=country), size=5) + 
-  'theme(legend.position="none")
+(woopsy, need triple ticks and an r):
+
+```{r}
+library(tidyverse)
+library(dslabs)
+data(gapminder)
+countries <- c("United States", "Canada") #creates an easier way to manage filtering by a set of selections
+labels <- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label
+gapminder %>% filter(country %in% countries) %>% 
+  ggplot(aes(year, life_expectancy, col=country))+
+  geom_line() +
+  geom_text(data=labels, aes(x, y, label=country), size=5) + 
+  theme(legend.position="none")
+```

@@ -19,6 +19,11 @@
 
 
 
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
 <link rel="stylesheet" href="/css/fonts.css" media="all">
 <link rel="stylesheet" href="/css/main.css" media="all">
 
@@ -66,7 +71,32 @@
     <div class="article-content">
       <p>Is this where I put my blog stuff? Testing this out…</p>
 <p>What happens if I type some code using a tick:</p>
-<p>’library(tidyverse) ’library(dslabs) ’data(gapminder) ’countries &lt;- c(“United States”, “Canada”) #creates an easier way to manage filtering by a set of selections ’labels &lt;- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label ’gapminder %&gt;% filter(country %in% countries) %&gt;% ’ggplot(aes(year, life_expectancy, col=country))+ ’geom_line() + ’geom_text(data=labels, aes(x, y, label=country), size=5) + ’theme(legend.position=“none”)</p>
+<p>(woopsy, need triple ticks and an r):</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 3.4.3</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## v ggplot2 2.2.1     v purrr   0.2.4
+## v tibble  1.4.1     v dplyr   0.7.4
+## v tidyr   0.7.2     v stringr 1.2.0
+## v readr   1.1.1     v forcats 0.2.0</code></pre>
+<pre><code>## Warning: package &#39;tibble&#39; was built under R version 3.4.3</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.4.3</code></pre>
+<pre><code>## Warning: package &#39;purrr&#39; was built under R version 3.4.3</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.4.2</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(dslabs)</code></pre>
+<pre><code>## Warning: package &#39;dslabs&#39; was built under R version 3.4.4</code></pre>
+<pre class="r"><code>data(gapminder)
+countries &lt;- c(&quot;United States&quot;, &quot;Canada&quot;) #creates an easier way to manage filtering by a set of selections
+labels &lt;- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label
+gapminder %&gt;% filter(country %in% countries) %&gt;% 
+  ggplot(aes(year, life_expectancy, col=country))+
+  geom_line() +
+  geom_text(data=labels, aes(x, y, label=country), size=5) + 
+  theme(legend.position=&quot;none&quot;)</code></pre>
+<p><img src="/post/2018-04-15-first-post_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 
     </div>
   </article>
@@ -89,6 +119,18 @@
 
     </div>
     
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
     
 
