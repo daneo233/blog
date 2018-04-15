@@ -1,25 +1,25 @@
 ---
-title: First Post
+title: Gapminder Data in the HarvardX Data Science Program
 author: Dane Hager
 date: '2018-04-15'
 slug: first-post
 categories:
-  - Blog
+  - HarvardX Data Science
 tags:
-  - Blog
-  - Test
-  - Demo
+  - Gapminder
+  - Visualization
 ---
 
-Is this where I put my blog stuff? Testing this out...
+In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. So, firstly, we load the packages:
 
-What happens if I type some code using a tick:
-
-(woopsy, need triple ticks and an r):
-
-```{r}
+```{r echo false}
 library(tidyverse)
 library(dslabs)
+```
+
+Then, we run the code (some of my notes included) to create a graphic of the comparison of the life expectancies for the US and Canada over the years.
+
+```{r}
 data(gapminder)
 countries <- c("United States", "Canada") #creates an easier way to manage filtering by a set of selections
 labels <- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label

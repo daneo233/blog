@@ -13,20 +13,7 @@
   </url>
   
   <url>
-    <loc>/tags/blog/</loc>
-    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/blog/</loc>
-    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
-    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -37,7 +24,13 @@
   </url>
   
   <url>
-    <loc>/tags/demo/</loc>
+    <loc>/tags/gapminder/</loc>
+    <lastmod>2018-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/harvardx-data-science/</loc>
     <lastmod>2018-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -55,7 +48,7 @@
   </url>
   
   <url>
-    <loc>/tags/test/</loc>
+    <loc>/tags/visualization/</loc>
     <lastmod>2018-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

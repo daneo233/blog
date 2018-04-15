@@ -12,14 +12,12 @@
     
     
     <item>
-      <title>First Post</title>
+      <title>Gapminder Data in the HarvardX Data Science Program</title>
       <link>/2018/04/15/first-post/</link>
       <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/04/15/first-post/</guid>
-      <description>Is this where I put my blog stuff? Testing this out…
-What happens if I type some code using a tick:
-(woopsy, need triple ticks and an r):
+      <description>In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. So, firstly, we load the packages:
 library(tidyverse)## Warning: package &amp;#39;tidyverse&amp;#39; was built under R version 3.4.3## -- Attaching packages --------------------------------------------- tidyverse 1.2.1 --## v ggplot2 2.2.1 v purrr 0.2.4## v tibble 1.4.1 v dplyr 0.7.4## v tidyr 0.7.2 v stringr 1.2.0## v readr 1.</description>
     </item>
     

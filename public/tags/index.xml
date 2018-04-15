@@ -12,29 +12,20 @@
     
     
     <item>
-      <title>Blog</title>
-      <link>/tags/blog/</link>
+      <title>Gapminder</title>
+      <link>/tags/gapminder/</link>
       <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/blog/</guid>
+      <guid>/tags/gapminder/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Demo</title>
-      <link>/tags/demo/</link>
+      <title>Visualization</title>
+      <link>/tags/visualization/</link>
       <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>/tags/test/</link>
-      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/test/</guid>
+      <guid>/tags/visualization/</guid>
       <description></description>
     </item>
     
