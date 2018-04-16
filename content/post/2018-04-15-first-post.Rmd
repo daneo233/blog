@@ -1,5 +1,5 @@
 ---
-title: "Gapminder Data in the HarvardX Data Science Program"
+title: "Analyzing Canada and the US for Life Expectancy"
 author: "Dane Hager"
 date: '2018-04-15'
 slug: first-post
