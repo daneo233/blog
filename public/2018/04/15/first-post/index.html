@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.38.2" />
 
 
-<title>Gapminder Data in the HarvardX Data Science Program - Dane Hager&#39;s Blog</title>
-<meta property="og:title" content="Gapminder Data in the HarvardX Data Science Program - Dane Hager&#39;s Blog">
+<title>Analyzing Canada and the US for Life Expectancy - Dane Hager&#39;s Blog</title>
+<meta property="og:title" content="Analyzing Canada and the US for Life Expectancy - Dane Hager&#39;s Blog">
 
 
 
@@ -62,40 +62,36 @@
     <span class="article-duration">2 min read</span>
     
 
-    <h1 class="article-title">Gapminder Data in the HarvardX Data Science Program</h1>
+    <h1 class="article-title">Analyzing Canada and the US for Life Expectancy</h1>
 
     
     <span class="article-date">2018/04/15</span>
     
 
     <div class="article-content">
-      <p>In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. So, firstly, we load the packages:</p>
+      <p>In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. In this example, we want to specifically look at two select countries within the data set - United States and Canada - to determine the life expectancy trajectory for both countries, and visualize any differences. To start, we need to enable the tidyverse and the dslabs packages</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
 <pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 3.4.3</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------------- tidyverse 1.2.1 --</code></pre>
-<pre><code>## v ggplot2 2.2.1     v purrr   0.2.4
-## v tibble  1.4.1     v dplyr   0.7.4
-## v tidyr   0.7.2     v stringr 1.2.0
-## v readr   1.1.1     v forcats 0.2.0</code></pre>
 <pre><code>## Warning: package &#39;tibble&#39; was built under R version 3.4.3</code></pre>
 <pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.4.3</code></pre>
 <pre><code>## Warning: package &#39;purrr&#39; was built under R version 3.4.3</code></pre>
 <pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.4.2</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>library(dslabs)</code></pre>
 <pre><code>## Warning: package &#39;dslabs&#39; was built under R version 3.4.4</code></pre>
-<p>Then, we run the code (some of my notes included) to create a graphic of the comparison of the life expectancies for the US and Canada over the years.</p>
+<p>Then, we need to filter down our set of data to just the countries in question</p>
 <pre class="r"><code>data(gapminder)
-countries &lt;- c(&quot;United States&quot;, &quot;Canada&quot;) #creates an easier way to manage filtering by a set of selections
-labels &lt;- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label
+data(gapminder)
+countries &lt;- c(&quot;United States&quot;, &quot;Canada&quot;) #creates an easier way to manage filtering by a set of selections</code></pre>
+<p>Note that I tend to create a variable vector to easily see what I am filtering later (in this case, creating the ‘countries’ vector.</p>
+<p>Next, we need to create a line graph using ggplot2. I want to clearly label which line corresponds to each country, so I’ll provide some labels in the graph, and then plot out a line graph.</p>
+<pre class="r"><code>labels &lt;- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label
 gapminder %&gt;% filter(country %in% countries) %&gt;% 
   ggplot(aes(year, life_expectancy, col=country))+
   geom_line() +
   geom_text(data=labels, aes(x, y, label=country), size=5) + 
   theme(legend.position=&quot;none&quot;)</code></pre>
-<p><img src="/post/2018-04-15-first-post_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="/post/2018-04-15-first-post_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>As we can see from this graph, Canada has consistently had a higher life expectancy, and in recent years, it appears that Canada’s life expectancy is growing at a higher rate than the United States.</p>
 
     </div>
   </article>

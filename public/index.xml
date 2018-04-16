@@ -6,28 +6,28 @@
     <description>Recent content on Dane Hager&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Apr 2018 21:48:51 -0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Gapminder Data in the HarvardX Data Science Program</title>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sun, 15 Apr 2018 21:48:51 -0700</pubDate>
+      
+      <guid>/about/</guid>
+      <description>My Name is Dane Hager. My educational background is in mathematical economics and statistics, and my working career has revolved around business process efficiencies, and business intelligence, reporting and analytics. In 2017, I started learning data science, mainly utilizing R, to gather knowledge to provide further insights and answers.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing Canada and the US for Life Expectancy</title>
       <link>/2018/04/15/first-post/</link>
       <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/2018/04/15/first-post/</guid>
-      <description>In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. So, firstly, we load the packages:
-library(tidyverse)## Warning: package &amp;#39;tidyverse&amp;#39; was built under R version 3.4.3## -- Attaching packages --------------------------------------------- tidyverse 1.2.1 --## v ggplot2 2.2.1 v purrr 0.2.4## v tibble 1.4.1 v dplyr 0.7.4## v tidyr 0.7.2 v stringr 1.2.0## v readr 1.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
+      <description>In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. In this example, we want to specifically look at two select countries within the data set - United States and Canada - to determine the life expectancy trajectory for both countries, and visualize any differences. To start, we need to enable the tidyverse and the dslabs packages
+library(tidyverse)## Warning: package &amp;#39;tidyverse&amp;#39; was built under R version 3.</description>
     </item>
     
   </channel>
