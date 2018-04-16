@@ -1,13 +1,12 @@
 ---
-title: Gapminder Data in the HarvardX Data Science Program
-author: Dane Hager
+title: "Gapminder Data in the HarvardX Data Science Program"
+author: "Dane Hager"
 date: '2018-04-15'
 slug: first-post
-categories:
-  - HarvardX Data Science
 tags:
-  - Gapminder
-  - Visualization
+- Gapminder
+- Visualization
+categories: HarvardX Data Science
 ---
 
 In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. In this example, we want to specifically look at two select countries within the data set - United States and Canada - to determine the life expectancy trajectory for both countries, and visualize any differences. To start, we need to enable the tidyverse and the dslabs packages
