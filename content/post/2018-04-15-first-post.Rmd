@@ -10,18 +10,26 @@ tags:
   - Visualization
 ---
 
-In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. So, firstly, we load the packages:
+In working through the HarvardX Data Science program, we studied the gapminder data set to look at life expectancy rates across countries. In this example, we want to specifically look at two select countries within the data set - United States and Canada - to determine the life expectancy trajectory for both countries, and visualize any differences. To start, we need to enable the tidyverse and the dslabs packages
 
-```{r message false}
+```{r message=FALSE}
 library(tidyverse)
 library(dslabs)
 ```
 
-Then, we run the code (some of my notes included) to create a graphic of the comparison of the life expectancies for the US and Canada over the years.
+Then, we need to filter down our set of data to just the countries in question
 
 ```{r}
 data(gapminder)
+data(gapminder)
 countries <- c("United States", "Canada") #creates an easier way to manage filtering by a set of selections
+```
+
+Note that I tend to create a variable vector to easily see what I am filtering later (in this case, creating the 'countries' vector. 
+
+Next, we need to create a line graph using ggplot2. I want to clearly label which line corresponds to each country, so I'll provide some labels in the graph, and then plot out a line graph. 
+
+```{r}
 labels <- data.frame(country=countries, x=c(2010, 2000), y=c(77,80.5)) #x and y variables tell where to put each label
 gapminder %>% filter(country %in% countries) %>% 
   ggplot(aes(year, life_expectancy, col=country))+
@@ -29,3 +37,5 @@ gapminder %>% filter(country %in% countries) %>%
   geom_text(data=labels, aes(x, y, label=country), size=5) + 
   theme(legend.position="none")
 ```
+
+As we can see from this graph, Canada has consistently had a higher life expectancy, and in recent years, it appears that Canada's life expectancy is growing at a higher rate than the United States. 

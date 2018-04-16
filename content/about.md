@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: "2016-05-05T21:48:51-07:00"
+date: "2018-04-15T21:48:51-07:00"
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium-theme).
+My Name is Dane Hager. My educational background is in mathematical economics and statistics, and my working career has revolved around business process efficiencies, and business intelligence, reporting and analytics. In 2017, I started learning data science, mainly utilizing R, to gather knowledge to provide further insights and answers.
